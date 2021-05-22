@@ -1,0 +1,80 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/kategori",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/kategori",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/kategori/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/kategori/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/leverandoer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/leverandoer",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/leverandoer/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/leverandoer/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE", "PUT" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/produkt",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/produkt",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/produkt/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/produkt/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE", "PUT" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "applicationUrl": "https://localhost:5000"
+  }
+}
